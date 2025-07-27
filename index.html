@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+        .no-click {
+            pointer-events: none !important;
+            user-select: none !important;
+            cursor: default !important;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item active">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#crearPublicacionModal">
+                            Crear Publicación
+                        </button>
+                        <div class="modal fade" id="crearPublicacionModal" tabindex="-1"
+                            aria-labelledby="crearPublicacionLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <form>
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="crearPublicacionLabel">Nueva Publicación</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Cerrar"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <label for="titulo" class="form-label">Descripción</label>
+                                                <input type="text" class="form-control" id="titulo" required>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="submit" class="btn btn-primary">Publicar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Perfil</a>
+                            <a class="dropdown-item" href="#">Accesibilidad</a>
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <ul class="nav nav-tabs justify-content-center my-3">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#fila">
+                <i class="fas fa-square mx-3"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#grid">
+                <i class="fas fa-th mx-3"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content px-3">
+        <div class="tab-pane fade show active" id="fila">
+            <div class="d-flex flex-column align-items-center gap-3 no-click">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa7Ko2GOZS-kDixRZqP5B2T5QNoouTtVdeiw&s"
+                    class="img-fluid rounded mx-auto no-click" width="500" height="100">
+                <p>Un gato en un fórmula 1, aprueben a este pobre sujeto por favor <i
+                        class="fa-regular fa-face-sad-cry"></i></p>
+                <img src="https://media.baamboozle.com/uploads/images/96916/1600786543_102384"
+                    class="img-fluid rounded mx-auto no-click" width="500" height="100">
+                <p>una simple silaba <strong>ME</strong></p>
+                <img src="https://es.web.img2.acsta.net/medias/nmedia/18/65/06/51/18893065.jpg"
+                    class="img-fluid rounded mx-auto no-click" width="500" height="100">
+                <p>es alvin la con la <strong>'A'</strong> <i class="fa-regular fa-face-laugh-wink"></i> </p>
+                <img src="https://gvpcertvideos.att.com/att-videos/2024/gvp_Apple-iPhone-16-Pro-Series-Sizzlevideo_5001807/gvp_Apple-iPhone-16-Pro-Series-Sizzlevideo_5001807_480.jpg"
+                    class="img-fluid rounded mx-auto no-click" width="500" height="100">
+                <p>uno de los modelos del iPhone 16: iphone 16<strong>Pro</strong> </p>
+                <img src="https://cdn-icons-png.flaticon.com/512/10040/10040757.png"
+                    class="img-fluid rounded mx-auto no-click">
+                <p>una simple silaba <strong>BA</strong></p>
+                <img src="https://img.freepik.com/vector-premium/logotipo-vinculado-ri-identidad-comercial-empresa-creative-letter-ri-logo-vector_754537-831.jpg"
+                    class="img-fluid rounded mx-auto no-click">
+                <p>una simple silaba <strong>RI</strong></p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvS6hE2Z-Atlc1KpxK0jMJBZFOJBkVia-9kA&s"
+                    class="img-fluid rounded mx-auto no-click" width="500" height="100">
+                <p>una simple silaba <strong>AN</strong></p>
+                <img src="https://thumbs.dreamstime.com/b/signo-de-interrogaci%C3%B3n-confusi%C3%B3n-32590363.jpg"
+                    class="img-fluid rounded mx-auto no-click" width="500" height="100"><strong>¿?</strong>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDUY_iFvDVKesta0cGvMhMfYtTVIZ3E4sQ_Q&s"
+                    class="img-fluid rounded mx-auto no-click" width="500" height="100">
+                <p> un regalito para los profes <i class="fa fa-gift"></i>
+                    <i class="fa fa-flower"></i>
+                </p>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="grid">
+            <div class="row row-cols-3 g-3">
+                <div class="col no-click">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSa7Ko2GOZS-kDixRZqP5B2T5QNoouTtVdeiw&s"
+                        class="img-fluid rounded" width="500" height="100">
+                </div>
+                <div class="col no-click"><img src="https://media.baamboozle.com/uploads/images/96916/1600786543_102384"
+                        class="img-fluid rounded" width="500" height="100"></div>
+                <div class="col no-click"><img
+                        src="https://es.web.img2.acsta.net/medias/nmedia/18/65/06/51/18893065.jpg"
+                        class="img-fluid rounded" width="500" height="100"></div>
+                <div class="col no-click"><img
+                        src="https://gvpcertvideos.att.com/att-videos/2024/gvp_Apple-iPhone-16-Pro-Series-Sizzlevideo_5001807/gvp_Apple-iPhone-16-Pro-Series-Sizzlevideo_5001807_480.jpg"
+                        class="img-fluid rounded" width="500" height="100"></div>
+                <div class="col no-click"><img src="https://cdn-icons-png.flaticon.com/512/10040/10040757.png"
+                        class="img-fluid rounded" width="500" height="100"></div>
+                <div class="col no-click"><img
+                        src="https://img.freepik.com/vector-premium/logotipo-vinculado-ri-identidad-comercial-empresa-creative-letter-ri-logo-vector_754537-831.jpg"
+                        class="img-fluid rounded" width="500" height="100"></div>
+                <div class="col no-click"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvS6hE2Z-Atlc1KpxK0jMJBZFOJBkVia-9kA&s"
+                        class="img-fluid rounded" width="500" height="100"></div>
+                <div class="col no-click"><img
+                        src="https://thumbs.dreamstime.com/b/signo-de-interrogaci%C3%B3n-confusi%C3%B3n-32590363.jpg"
+                        class="img-fluid rounded" width="500" height="100"></div>
+                <div class="col no-click"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDUY_iFvDVKesta0cGvMhMfYtTVIZ3E4sQ_Q&s"
+                        class="img-fluid rounded" width="500" height="100"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+
+</html>
